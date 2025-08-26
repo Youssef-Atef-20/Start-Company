@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+}
+nav , header{
+    background-color: #74C69D ;
+}
+
+.nav{
+    display: flex;
+    padding: 3.5vw 10vw 2vh 5vw;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 15vw;
+    height: 50px;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
+    color: aliceblue;
+}
+
+.pages a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: larger;
+}
+
+
+
+
+
+header{
+    display: flex;
+    color: white;
+    padding: 10vh 8vw;
+    gap: 30vw;
+    justify-content: space-around;
+    height: 62vh;
+}
+
+header img {
+    width: 40vw;
+    margin-left: -5vw;
+}
+
+header p {
+    padding: 5vh 0px;
+}
+
+header h1{
+    font-size: 5vw;
+}
+
+header button{
+    padding: 5px 25px;
+    border-style: none;
+}
+
+
+.partners{
+    display: flex;
+    margin-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+}
+
+.partners p:first-child{
+    display:flex;
+    justify-content: center;
+    color: #74C69D;
+
+}
+
+.partners p:nth-child(2){
+    display: flex;
+    justify-content: center; 
+}
+
+.partners_pictures{
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.partners button{
+    color: #ffffff;
+    background-color: black;
+    border-style: none;
+    padding: 1vw 2.5vw;
+    border-radius: 5%;
+}
+
+
+
+.second_group{
+    display: flex;
+    gap:5vw;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+
+.second_group img {
+    width:  40vw;
+}
+
+
+
+.second_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.second_part button{
+    width: 10vw;
+    color: #ffffff;
+    background-color: black;
+    border-style:none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.third_group{
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+
+.third_group img{
+    width: 30vw;
+}
+
+
+.third_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.third_part button{
+    width: 10vw;
+    color: #ffffff;
+    background-color: black;
+    border-style:none;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.team h2{
+    color: #74C69D;
+    font-size: medium;
+} 
+
+
+
+.cards{
+    display: flex;
+    gap: 6vw;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow:2px 1px 3px #0000004d;
+    border-radius: 2px;
+    margin: 25px 0px;
+}
+
+
+
+
+footer{
+    height: 25vh;
+    background-color: #74C69D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.icons{
+    display: flex;
+    gap: 15px;
+    height: 3vh;
+}
+
+
+footer p {
+    color: #ffffff;
+}
