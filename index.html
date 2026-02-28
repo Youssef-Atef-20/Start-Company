@@ -3,117 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Company</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="Logo.svg">
-    <title>Start</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Start Navbar -->
-     <nav>
-        <div class="nav">
-            <img src="Logo.svg" alt="logo of Company">
-            <div class="pages">
-                <a href="index.html">Home</a>
-                <a href="service.html">Services</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-     </nav>
-    <!-- End Navbar -->
-     <!-- Start Header -->
-    <header>
-    <div class="header">
-        <p>Welcome to </p>
-        <h1>Start Company</h1>
-        <p>At Start, we help businesses grow faster by providing smart digital solutions and innovative strategies that make success simple</p>    
-        <button>Explore</button>
-    </div>
-    <img src="Group.svg" alt="First Cartoon Group">
-    </header>
-    <!-- End Header -->
-     <!-- Start Main -->
-      <main>
-        <div class="partners">
-            <p>PARTNERS</p>
-            <p>We are proud to collaborate with world-class partners who share our vision for innovation and growth</p>
-            <div class="partners_pictures">
-                <img src="google.svg" alt="google">
-                <img src="microsoft.svg" alt="microsoft">
-                <img src="airbnb.svg" alt="airbnb">
-                <img src="facebook.svg" alt="facebook">   
-            </div>
-            <button>Learn More</button>
-        </div>
 
-    <div class="second_group">
-        <img src="Group2.svg" alt="Second Cartoon Group">
-        <div class="second_part">
-            <h2>Connect with your team</h2>
-            <p>Connect with your team seamlessly and bring your ideas to life with smart digital solutions</p>
-            <button>Learn More</button>
+<!-- ================= NAVBAR ================= -->
+<nav data-aos="fade-down">
+    <div class="nav">
+        <img src="Logo.svg" alt="Company Logo" data-aos="fade-right" data-aos-delay="150">
+        <div class="pages" data-aos="fade-left" data-aos-delay="250">
+            <a href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
+</nav>
 
-
-    <div class="third_group">
-        <div class="third_part">
-            <h2>Boost productivity</h2>
-            <p>Boost productivity and manage your projects efficiently with our powerful tools</p>
-            <button>Learn More</button>
-        </div>
-        <img src="Group3.svg" alt="Third Cartoon Group">
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="header" data-aos="fade-up" data-aos-duration="1000">
+        <p data-aos="fade-up" data-aos-delay="100">Welcome to</p>
+        <h1 data-aos="fade-up" data-aos-delay="200">Start Company</h1>
+        <p data-aos="fade-up" data-aos-delay="300">
+            At Start, we help businesses grow faster by providing smart digital solutions 
+            and innovative strategies that make success simple
+        </p>    
+        <button data-aos="zoom-in" data-aos-delay="450">Explore</button>
     </div>
 
+    <img src="Group.svg" alt="Business Illustration"
+         data-aos="zoom-in" data-aos-delay="250">
+</header>
 
+<!-- ================= MAIN ================= -->
+<main>
 
-    <div class="team">
-        <h2>TEAM</h2>
-        <h3>Our Talents</h3>
-        <p>Meet the passionate team behind Start — driven by creativity, innovation, and dedication</p>
-        <div class="cards">
+<!-- ===== Partners ===== -->
+<div class="partners">
+    <p data-aos="fade-up">PARTNERS</p>
+    <p data-aos="fade-up" data-aos-delay="150">
+        We are proud to collaborate with world-class partners who share our vision for innovation and growth
+    </p>
 
-            <div class="card">
-                <img src="person1.svg" alt="person1">
-                <p>Peg Legge</p>
-                <p>CEO</p>
-            </div>
+    <div class="partners_pictures">
+        <img src="google.svg" alt="Google Logo" data-aos="zoom-in" data-aos-delay="100">
+        <img src="microsoft.svg" alt="Microsoft Logo" data-aos="zoom-in" data-aos-delay="200">
+        <img src="airbnb.svg" alt="Airbnb Logo" data-aos="zoom-in" data-aos-delay="300">
+        <img src="facebook.svg" alt="Facebook Logo" data-aos="zoom-in" data-aos-delay="400">
+    </div>
 
-            <div class="card">
-                <img src="person2.svg" alt="person2">
-                <p>Richard Guerra</p>
-                <p>CTO</p>
-            </div>
+    <button data-aos="fade-up" data-aos-delay="500">Learn More</button>
+</div>
 
-            <div class="card">
-                <img src="person3.svg" alt="person3">
-                <p>Alexandra Stolz</p>
-                <p>DESIGNER</p>
-            </div>
+<!-- ===== Second Section ===== -->
+<div class="second_group">
+    <img src="Group2.svg" alt="Team Collaboration Illustration"
+         data-aos="fade-right">
 
-            <div class="card">
-                <img src="person4.svg" alt="person4">
-                <p>Janet Bray</p>
-                <p>DEVELOPER</p>
-            </div>
+    <div class="second_part" data-aos="fade-left" data-aos-delay="150">
+        <h2>Connect with your team</h2>
+        <p>
+            Connect with your team seamlessly and bring your ideas to life with smart digital solutions
+        </p>
+        <button>Learn More</button>
+    </div>
+</div>
 
+<!-- ===== Third Section ===== -->
+<div class="third_group">
+    <div class="third_part" data-aos="fade-right">
+        <h2>Boost productivity</h2>
+        <p>
+            Boost productivity and manage your projects efficiently with our powerful tools
+        </p>
+        <button>Learn More</button>
+    </div>
+
+    <img src="Group3.svg" alt="Productivity Illustration"
+         data-aos="fade-left" data-aos-delay="150">
+</div>
+
+<!-- ===== Team ===== -->
+<div class="team">
+    <h2 data-aos="fade-up">TEAM</h2>
+    <h3 data-aos="fade-up" data-aos-delay="150">Our Talents</h3>
+    <p data-aos="fade-up" data-aos-delay="250">
+        Meet the passionate team behind Start driven by creativity innovation and dedication
+    </p>
+
+    <div class="cards">
+        <div class="card" data-aos="flip-up" data-aos-delay="100">
+            <img src="person1.svg" alt="Peg Legge CEO">
+            <p>Peg Legge</p>
+            <p>CEO</p>
+        </div>
+
+        <div class="card" data-aos="flip-up" data-aos-delay="200">
+            <img src="person2.svg" alt="Richard Guerra CTO">
+            <p>Richard Guerra</p>
+            <p>CTO</p>
+        </div>
+
+        <div class="card" data-aos="flip-up" data-aos-delay="300">
+            <img src="person3.svg" alt="Alexandra Stolz Designer">
+            <p>Alexandra Stolz</p>
+            <p>DESIGNER</p>
+        </div>
+
+        <div class="card" data-aos="flip-up" data-aos-delay="400">
+            <img src="person4.svg" alt="Janet Bray Developer">
+            <p>Janet Bray</p>
+            <p>DEVELOPER</p>
         </div>
     </div>
-      </main>
-      <!-- End Main -->
+</div>
 
-      <!-- Start Footer -->
-      <footer>
-        <div class="icons">
-            <img src="facebook-icon.svg" alt="facebook-icon">
-            <img src="instagram.svg" alt="instagram">
-            <img src="twitter.svg" alt="twitter">
-            <img src="pinterest.svg" alt="pinterest">
-            <img src="tiktok.svg" alt="tiktok">
-            <img src="whatsapp.svg" alt="whatsapp">
-            <img src="youtube.svg" alt="Youtube">
-        </div>
-        <p>© Start, 2022. All rights reserved.</p>
-      </footer>
-       <!-- End Footer -->
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="icons" data-aos="fade-up">
+        <img src="facebook-icon.svg" alt="Facebook">
+        <img src="instagram.svg" alt="Instagram">
+        <img src="twitter.svg" alt="Twitter">
+        <img src="pinterest.svg" alt="Pinterest">
+        <img src="tiktok.svg" alt="Tiktok">
+        <img src="whatsapp.svg" alt="WhatsApp">
+        <img src="youtube.svg" alt="YouTube">
+    </div>
+
+    <p data-aos="fade-up" data-aos-delay="200">
+        © Start 2022 All rights reserved
+    </p>
+</footer>
+
+<!-- ================= AOS SCRIPT ================= -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 900,
+        easing: 'ease-out-cubic',
+        once: true
+    });
+</script>
+
 </body>
 </html>
