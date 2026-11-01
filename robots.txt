@@ -1,0 +1,5 @@
+# robots.txt for Start Company
+User-agent: *
+Allow: /
+
+Sitemap: https://start-company.vercel.app/sitemap.xml

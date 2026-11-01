@@ -1,154 +1,707 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Company</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Company | Smart Digital Solutions &amp; Modern Agency</title>
+  
+  <!-- SEO Metadata -->
+  <meta name="description" content="At Start Company, we help businesses grow faster with innovative digital solutions, custom web development, mobile apps, UI/UX design, and business consulting.">
+  <meta name="keywords" content="digital agency, web development, mobile apps, UI UX design, cloud solutions, business consulting, Start Company">
+  <meta name="author" content="Start Company">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://start-company.vercel.app/">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="Logo.svg">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://start-company.vercel.app/">
+  <meta property="og:title" content="Start Company | Smart Digital Solutions &amp; Modern Agency">
+  <meta property="og:description" content="We help businesses grow faster by providing smart digital solutions and innovative strategies that make success simple.">
+  <meta property="og:image" content="https://start-company.vercel.app/the_updated_picture.webp">
+  <meta property="og:site_name" content="Start Company">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://start-company.vercel.app/">
+  <meta name="twitter:title" content="Start Company | Smart Digital Solutions &amp; Modern Agency">
+  <meta name="twitter:description" content="We help businesses grow faster by providing smart digital solutions and innovative strategies that make success simple.">
+  <meta name="twitter:image" content="https://start-company.vercel.app/the_updated_picture.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="Logo.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- Accessible Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- ================= NAVBAR ================= -->
-<nav data-aos="fade-down">
-    <div class="nav">
-        <img src="Logo.svg" alt="Company Logo" data-aos="fade-right" data-aos-delay="150">
-        <div class="pages" data-aos="fade-left" data-aos-delay="250">
-            <a href="index.html">Home</a>
-            <a href="service.html">Services</a>
-            <a href="contact.html">Contact</a>
+  <!-- ================= NAVBAR ================= -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand" aria-label="Start Company Homepage">
+        <img src="Logo-dark.svg" alt="Start Company" class="nav-logo" width="187" height="50">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links-desktop" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="service.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="nav-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Get in Touch</span>
+          <span class="btn-icon-wrapper" aria-hidden="true">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg class="hamburger-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay -->
+  <div class="mobile-drawer-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <img src="Logo-dark.svg" alt="Start Company" class="nav-logo" width="140" height="37">
+      <button type="button" class="mobile-drawer-close" aria-label="Close navigation menu">
+        <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active" aria-current="page">Home</a>
+      <a href="service.html" class="mobile-nav-link">Services</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+
+    <div class="mobile-drawer-footer">
+      <a href="contact.html" class="btn btn-brand" style="width: 100%;">
+        <span>Get in Touch</span>
+        <span class="btn-icon-wrapper" aria-hidden="true">
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main id="main-content">
+
+    <!-- ===== 1. HERO SECTION ===== -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-content" data-reveal="fade-up">
+          <div class="section-eyebrow hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            <span>Welcome to Start Company</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Smart digital solutions that make <span class="hero-title-highlight">success simple</span>.
+          </h1>
+
+          <p class="hero-description">
+            At Start, we help businesses grow faster by providing smart digital solutions and innovative strategies tailored for sustainable scale.
+          </p>
+
+          <div class="hero-actions">
+            <a href="service.html" class="btn btn-brand">
+              <span>Explore Services</span>
+              <span class="btn-icon-wrapper" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </span>
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              <span>Contact Us</span>
+              <span class="btn-icon-wrapper" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+          <!-- Micro Proof Indicator -->
+          <div class="hero-trust-bar">
+            <div class="hero-trust-avatars" aria-hidden="true">
+              <img src="person1.svg" alt="Client Avatar" class="trust-avatar" width="36" height="36">
+              <img src="person2.svg" alt="Client Avatar" class="trust-avatar" width="36" height="36">
+              <img src="person3.svg" alt="Client Avatar" class="trust-avatar" width="36" height="36">
+              <img src="person4.svg" alt="Client Avatar" class="trust-avatar" width="36" height="36">
+            </div>
+            <p class="hero-trust-text">
+              Trusted by <strong>industry leaders</strong> to engineer scalable digital products.
+            </p>
+          </div>
         </div>
-    </div>
-</nav>
 
-<!-- ================= HEADER ================= -->
-<header>
-    <div class="header" data-aos="fade-up" data-aos-duration="1000">
-        <p data-aos="fade-up" data-aos-delay="100">Welcome to</p>
-        <h1 data-aos="fade-up" data-aos-delay="200">Start Company</h1>
-        <p data-aos="fade-up" data-aos-delay="300">
-            At Start, we help businesses grow faster by providing smart digital solutions 
-            and innovative strategies that make success simple
-        </p>    
-        <button data-aos="zoom-in" data-aos-delay="450">Explore</button>
-    </div>
+        <!-- Double-Bezel Nested Illustration Frame -->
+        <div class="hero-visual-frame" data-reveal="fade-in">
+          <div class="hero-visual-inner">
+            <img src="Group.svg" alt="Start Company team analyzing digital strategy and data charts" class="hero-illustration" width="645" height="379" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <img src="Group.svg" alt="Business Illustration"
-         data-aos="zoom-in" data-aos-delay="250">
-</header>
+    <!-- ===== 2. PARTNERS SECTION ===== -->
+    <section class="partners-section" aria-labelledby="partners-heading">
+      <div class="container">
+        <div class="partners-intro" data-reveal="fade-up">
+          <p class="partners-label">PARTNERS</p>
+          <h2 id="partners-heading" class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.75rem;">
+            Collaborating with World-Class Brands
+          </h2>
+          <p class="partners-text">
+            We are proud to collaborate with world-class partners who share our vision for innovation and growth.
+          </p>
+        </div>
 
-<!-- ================= MAIN ================= -->
-<main>
+        <div class="partners-grid" data-reveal="fade-up">
+          <div class="partner-card">
+            <img src="google.svg" alt="Google logo" class="partner-logo" width="153" height="50">
+          </div>
+          <div class="partner-card">
+            <img src="microsoft.svg" alt="Microsoft logo" class="partner-logo" width="150" height="50">
+          </div>
+          <div class="partner-card">
+            <img src="airbnb.svg" alt="Airbnb logo" class="partner-logo" width="150" height="50">
+          </div>
+          <div class="partner-card">
+            <img src="facebook.svg" alt="Facebook logo" class="partner-logo" width="150" height="50">
+          </div>
+        </div>
 
-<!-- ===== Partners ===== -->
-<div class="partners">
-    <p data-aos="fade-up">PARTNERS</p>
-    <p data-aos="fade-up" data-aos-delay="150">
-        We are proud to collaborate with world-class partners who share our vision for innovation and growth
-    </p>
+        <div class="text-center" style="margin-top: var(--space-8);" data-reveal="fade-up">
+          <a href="service.html" class="btn btn-secondary">
+            <span>Learn More About Our Capabilities</span>
+            <span class="btn-icon-wrapper" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <div class="partners_pictures">
-        <img src="google.svg" alt="Google Logo" data-aos="zoom-in" data-aos-delay="100">
-        <img src="microsoft.svg" alt="Microsoft Logo" data-aos="zoom-in" data-aos-delay="200">
-        <img src="airbnb.svg" alt="Airbnb Logo" data-aos="zoom-in" data-aos-delay="300">
-        <img src="facebook.svg" alt="Facebook Logo" data-aos="zoom-in" data-aos-delay="400">
-    </div>
+    <!-- ===== 3. FEATURE: CONNECT WITH YOUR TEAM ===== -->
+    <section class="feature-section" aria-labelledby="feature-team-heading">
+      <div class="container feature-grid">
+        <div class="feature-visual-wrapper" data-reveal="fade-right">
+          <div class="feature-card-shell">
+            <div class="feature-card-inner">
+              <img src="Group2.svg" alt="Team members collaborating effectively on digital products" class="feature-illustration" width="600" height="432" loading="lazy">
+            </div>
+          </div>
+        </div>
 
-    <button data-aos="fade-up" data-aos-delay="500">Learn More</button>
-</div>
+        <div class="feature-content" data-reveal="fade-left">
+          <span class="section-eyebrow">Collaboration</span>
+          <h2 id="feature-team-heading" class="feature-title">Connect with your team</h2>
+          <p class="feature-description">
+            Connect with your team seamlessly and bring your ideas to life with smart digital solutions designed for unified execution.
+          </p>
 
-<!-- ===== Second Section ===== -->
-<div class="second_group">
-    <img src="Group2.svg" alt="Team Collaboration Illustration"
-         data-aos="fade-right">
+          <ul class="feature-checklist">
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Unified workflows and transparent project roadmaps.</span>
+            </li>
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Modern communication bridges between engineering and design.</span>
+            </li>
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Faster decision cycles with integrated data intelligence.</span>
+            </li>
+          </ul>
 
-    <div class="second_part" data-aos="fade-left" data-aos-delay="150">
-        <h2>Connect with your team</h2>
-        <p>
-            Connect with your team seamlessly and bring your ideas to life with smart digital solutions
+          <a href="contact.html" class="btn btn-primary">
+            <span>Learn More</span>
+            <span class="btn-icon-wrapper" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. FEATURE: BOOST PRODUCTIVITY ===== -->
+    <section class="feature-section alt-bg" aria-labelledby="feature-productivity-heading">
+      <div class="container feature-grid reverse">
+        <div class="feature-content" data-reveal="fade-right">
+          <span class="section-eyebrow">Efficiency</span>
+          <h2 id="feature-productivity-heading" class="feature-title">Boost productivity</h2>
+          <p class="feature-description">
+            Boost productivity and manage your projects efficiently with our powerful tools, automated systems, and performance architectures.
+          </p>
+
+          <ul class="feature-checklist">
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Streamlined deployment pipelines and zero-downtime releases.</span>
+            </li>
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Tailored business automation that eliminates redundant overhead.</span>
+            </li>
+            <li class="feature-checklist-item">
+              <span class="checklist-icon" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span>Measurable performance gains across your digital touchpoints.</span>
+            </li>
+          </ul>
+
+          <a href="service.html" class="btn btn-primary">
+            <span>Learn More</span>
+            <span class="btn-icon-wrapper" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="feature-visual-wrapper" data-reveal="fade-left">
+          <div class="feature-card-shell">
+            <div class="feature-card-inner">
+              <img src="Group3.svg" alt="Illustration representing accelerated team productivity and analytics" class="feature-illustration" width="600" height="566" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 5. SERVICES OVERVIEW (Homepage Preview) ===== -->
+    <section class="services-section" aria-labelledby="services-preview-heading">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">Our Expertise</span>
+          <h2 id="services-preview-heading" class="section-title">End-to-End Digital Services</h2>
+          <p class="section-subtitle">
+            Explore our specialized disciplines engineered to solve complex digital challenges and unlock sustainable business growth.
+          </p>
+        </div>
+
+        <div class="services-grid-container">
+          <!-- 1. Web Development -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-100">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Web Development</h3>
+              <p class="service-card-desc">
+                Custom websites and performant web applications built with modern web standards, robust architectures, and responsive precision.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Responsive Design &amp; PWA
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Custom E-Commerce &amp; APIs
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#web-dev" class="service-link">
+                  <span>Explore Web Solutions</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Mobile App Development -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-150">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Mobile App Development</h3>
+              <p class="service-card-desc">
+                High-performance native and cross-platform mobile apps for iOS and Android that deliver intuitive handheld user experiences.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  iOS &amp; Android Apps
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  App Store Optimization
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#mobile-dev" class="service-link">
+                  <span>Explore Mobile Apps</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. UI/UX Design -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-200">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4 4 4 0 014-4c.73 0 1.41.2 2 .55V5a2 2 0 012-2h8a2 2 0 012 2v10a4 4 0 01-4 4 4 4 0 01-4-4c0-.73.2-1.41.55-2H9v4a4 4 0 01-4 4z"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">UI/UX Design</h3>
+              <p class="service-card-desc">
+                Engaging and human-centered design systems, interactive prototypes, and interfaces that balance aesthetic delight with usability.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  User Research &amp; Wireframing
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Interactive Prototyping
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#ui-ux" class="service-link">
+                  <span>Explore UI/UX</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Digital Marketing -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-250">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Digital Marketing</h3>
+              <p class="service-card-desc">
+                Data-informed marketing strategies, technical SEO, and conversion optimization that expand your brand reach and audience acquisition.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Technical SEO &amp; Growth
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Analytics &amp; Campaign Strategy
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#marketing" class="service-link">
+                  <span>Explore Marketing</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Cloud Solutions -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-300">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Cloud Solutions</h3>
+              <p class="service-card-desc">
+                Resilient cloud architecture, automated DevOps, and modern serverless setups that guarantee 99.9% uptime and security.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Cloud Migration &amp; Hosting
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Security &amp; Disaster Recovery
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#cloud" class="service-link">
+                  <span>Explore Cloud</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Business Consulting -->
+          <article class="service-bezel-card" data-reveal="fade-up" class="delay-400">
+            <div class="service-card-core">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Business Consulting</h3>
+              <p class="service-card-desc">
+                Strategic technology advisory to navigate digital transformation, streamline operational workflows, and maximize ROI.
+              </p>
+              <div class="service-card-features">
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Process &amp; Stack Optimization
+                </span>
+                <span class="service-feature-pill">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Digital Transformation Roadmap
+                </span>
+              </div>
+              <div class="service-card-footer">
+                <a href="service.html#consulting" class="service-link">
+                  <span>Explore Consulting</span>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. TEAM SECTION ===== -->
+    <section class="team-section" aria-labelledby="team-heading">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">Our Talents</span>
+          <h2 id="team-heading" class="section-title">Meet the Core Team</h2>
+          <p class="section-subtitle">
+            Meet the passionate team behind Start — driven by creativity, innovation, and dedication to your business success.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- Peg Legge - CEO -->
+          <div class="team-card-shell" data-reveal="fade-up" class="delay-100">
+            <div class="team-card-core">
+              <div class="team-avatar-container">
+                <img src="person1.svg" alt="Peg Legge, Chief Executive Officer at Start Company" class="team-avatar-img" width="120" height="120" loading="lazy">
+              </div>
+              <h3 class="team-member-name">Peg Legge</h3>
+              <span class="team-member-role">CEO</span>
+            </div>
+          </div>
+
+          <!-- Richard Guerra - CTO -->
+          <div class="team-card-shell" data-reveal="fade-up" class="delay-200">
+            <div class="team-card-core">
+              <div class="team-avatar-container">
+                <img src="person2.svg" alt="Richard Guerra, Chief Technology Officer at Start Company" class="team-avatar-img" width="120" height="120" loading="lazy">
+              </div>
+              <h3 class="team-member-name">Richard Guerra</h3>
+              <span class="team-member-role">CTO</span>
+            </div>
+          </div>
+
+          <!-- Alexandra Stolz - Designer -->
+          <div class="team-card-shell" data-reveal="fade-up" class="delay-300">
+            <div class="team-card-core">
+              <div class="team-avatar-container">
+                <img src="person3.svg" alt="Alexandra Stolz, Lead Designer at Start Company" class="team-avatar-img" width="120" height="120" loading="lazy">
+              </div>
+              <h3 class="team-member-name">Alexandra Stolz</h3>
+              <span class="team-member-role">Designer</span>
+            </div>
+          </div>
+
+          <!-- Janet Bray - Developer -->
+          <div class="team-card-shell" data-reveal="fade-up" class="delay-400">
+            <div class="team-card-core">
+              <div class="team-avatar-container">
+                <img src="person4.svg" alt="Janet Bray, Senior Developer at Start Company" class="team-avatar-img" width="120" height="120" loading="lazy">
+              </div>
+              <h3 class="team-member-name">Janet Bray</h3>
+              <span class="team-member-role">Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. FINAL CONVERSION CTA ===== -->
+    <section class="final-cta-section" aria-labelledby="cta-heading">
+      <div class="cta-mesh-glow" aria-hidden="true"></div>
+      <div class="container cta-container" data-reveal="fade-up">
+        <span class="section-eyebrow dark">Let's Work Together</span>
+        <h2 id="cta-heading" class="cta-title">Ready to build your next breakthrough digital product?</h2>
+        <p class="cta-description">
+          Whether launching a new platform or revitalizing an existing system, our team is equipped to turn your ambition into measurable results.
         </p>
-        <button>Learn More</button>
+        <div class="cta-button-group">
+          <a href="contact.html" class="btn btn-white">
+            <span>Contact Us Today</span>
+            <span class="btn-icon-wrapper" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </span>
+          </a>
+          <a href="service.html" class="btn btn-secondary">
+            <span>View All Services</span>
+            <span class="btn-icon-wrapper" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <a href="index.html" aria-label="Start Company Homepage">
+            <img src="Logo.svg" alt="Start Company" class="footer-logo" width="187" height="50">
+          </a>
+          <p class="footer-tagline">
+            At Start Company, we help businesses grow faster through smart digital solutions, modern engineering, and human-centered design.
+          </p>
+          <div class="footer-social-links" aria-label="Social media profiles">
+            <a href="https://facebook.com" class="social-icon-btn" aria-label="Visit Start Company on Facebook" target="_blank" rel="noopener noreferrer">
+              <img src="facebook-icon.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://instagram.com" class="social-icon-btn" aria-label="Visit Start Company on Instagram" target="_blank" rel="noopener noreferrer">
+              <img src="instagram.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://twitter.com" class="social-icon-btn" aria-label="Visit Start Company on Twitter / X" target="_blank" rel="noopener noreferrer">
+              <img src="twitter.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://pinterest.com" class="social-icon-btn" aria-label="Visit Start Company on Pinterest" target="_blank" rel="noopener noreferrer">
+              <img src="pinterest.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://tiktok.com" class="social-icon-btn" aria-label="Visit Start Company on TikTok" target="_blank" rel="noopener noreferrer">
+              <img src="tiktok.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://whatsapp.com" class="social-icon-btn" aria-label="Chat with Start Company on WhatsApp" target="_blank" rel="noopener noreferrer">
+              <img src="whatsapp.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+            <a href="https://youtube.com" class="social-icon-btn" aria-label="Visit Start Company on YouTube" target="_blank" rel="noopener noreferrer">
+              <img src="youtube.svg" alt="" aria-hidden="true" width="18" height="18">
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-nav-link">Home</a></li>
+            <li><a href="service.html" class="footer-nav-link">Services</a></li>
+            <li><a href="contact.html" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h3 class="footer-heading">Services</h3>
+          <ul class="footer-nav-list">
+            <li><a href="service.html#web-dev" class="footer-nav-link">Web Development</a></li>
+            <li><a href="service.html#mobile-dev" class="footer-nav-link">Mobile Apps</a></li>
+            <li><a href="service.html#ui-ux" class="footer-nav-link">UI/UX Design</a></li>
+            <li><a href="service.html#marketing" class="footer-nav-link">Digital Marketing</a></li>
+            <li><a href="service.html#cloud" class="footer-nav-link">Cloud Solutions</a></li>
+            <li><a href="service.html#consulting" class="footer-nav-link">Business Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <span>Email:</span>
+              <a href="mailto:hello@startcompany.com">hello@startcompany.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>Phone:</span>
+              <a href="tel:+15551234567">+1 (555) 123-4567</a>
+            </div>
+            <div class="footer-contact-item">
+              <span>Office:</span>
+              <address style="font-style: normal; display: inline;">123 Business Street, City, State 12345</address>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; <span class="current-year">2026</span> Start Company. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="contact.html">Privacy Policy</a>
+          <a href="contact.html">Terms of Service</a>
+          <a href="contact.html">Support</a>
+        </div>
+      </div>
     </div>
-</div>
+  </footer>
 
-<!-- ===== Third Section ===== -->
-<div class="third_group">
-    <div class="third_part" data-aos="fade-right">
-        <h2>Boost productivity</h2>
-        <p>
-            Boost productivity and manage your projects efficiently with our powerful tools
-        </p>
-        <button>Learn More</button>
-    </div>
-
-    <img src="Group3.svg" alt="Productivity Illustration"
-         data-aos="fade-left" data-aos-delay="150">
-</div>
-
-<!-- ===== Team ===== -->
-<div class="team">
-    <h2 data-aos="fade-up">TEAM</h2>
-    <h3 data-aos="fade-up" data-aos-delay="150">Our Talents</h3>
-    <p data-aos="fade-up" data-aos-delay="250">
-        Meet the passionate team behind Start driven by creativity innovation and dedication
-    </p>
-
-    <div class="cards">
-        <div class="card" data-aos="flip-up" data-aos-delay="100">
-            <img src="person1.svg" alt="Peg Legge CEO">
-            <p>Peg Legge</p>
-            <p>CEO</p>
-        </div>
-
-        <div class="card" data-aos="flip-up" data-aos-delay="200">
-            <img src="person2.svg" alt="Richard Guerra CTO">
-            <p>Richard Guerra</p>
-            <p>CTO</p>
-        </div>
-
-        <div class="card" data-aos="flip-up" data-aos-delay="300">
-            <img src="person3.svg" alt="Alexandra Stolz Designer">
-            <p>Alexandra Stolz</p>
-            <p>DESIGNER</p>
-        </div>
-
-        <div class="card" data-aos="flip-up" data-aos-delay="400">
-            <img src="person4.svg" alt="Janet Bray Developer">
-            <p>Janet Bray</p>
-            <p>DEVELOPER</p>
-        </div>
-    </div>
-</div>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer>
-    <div class="icons">
-        <img src="facebook-icon.svg" alt="facebook-icon">
-        <img src="instagram.svg" alt="instagram">
-        <img src="twitter.svg" alt="twitter">
-        <img src="pinterest.svg" alt="pinterest">
-        <img src="tiktok.svg" alt="tiktok">
-        <img src="whatsapp.svg" alt="whatsapp">
-        <img src="youtube.svg" alt="Youtube">
-    </div> 
-    <p>© Start, 2022. All rights reserved.</p>
-</footer>
-
-<!-- ================= AOS SCRIPT ================= -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-AOS.init({
-  duration: 900,
-  easing: 'ease-out-cubic'
-});
-
-window.addEventListener('load', AOS.refresh);
-</script>
-
+  <!-- Master JavaScript Interactions -->
+  <script src="script.js" defer></script>
 </body>
 </html>
