@@ -303,3 +303,4 @@ document.addEventListener('DOMContentLoaded', () => {
     el.textContent = thisYear.toString();
   });
 });
+
