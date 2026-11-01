@@ -128,7 +128,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 html {
@@ -680,8 +679,7 @@ body.mobile-nav-open .mobile-drawer {
 
 .hero-title-highlight {
   color: var(--color-brand-primary);
-  position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .hero-description {
